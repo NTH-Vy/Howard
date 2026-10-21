@@ -1,0 +1,302 @@
+/* 992 PX */
+@media (max-width: 992px) { 
+    .content1-wrapper,
+    .content2-wrapper,
+    .process-wrapper,
+    .achievements-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .main-title,
+    .achievements-title,
+    .process-title,
+    .content1-title {
+        font-size: 38px;
+    }
+
+    .achievements-cards-column,
+    .achievements-content-column,
+    .process-column-left,
+    .process-column-right,
+    .content2-info,
+    .content1-content {
+        flex: 0 0 auto;
+        max-width: 100%;
+    }
+
+    .main-description,
+    .process-description,
+    .achievements-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main-actions,
+    .content1-controls {
+        margin-left: auto;
+        margin-right: 100px;
+    }
+
+    .main-badge-line {
+        margin-top: 80px;
+    }
+
+    .main-badge-text {
+        justify-items: left;
+        justify-content: flex-start;
+        text-align: left;
+        margin-left: -65px;
+    }
+
+    .main-image-column,
+    .content1-image-column {
+        flex: 0 0 auto;
+        width: 340px;
+    }
+
+    .main-image-box,
+    .content1-image-box {
+        height: 380px;
+    }
+
+    .content2-grid {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .content2-grid {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .content2-controls {
+        margin-left: 180px;
+    }
+
+    .experience-item {
+        display: grid;
+        justify-items: left;
+        justify-content: flex-start;
+    }
+
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 32px 24px;
+        gap: 24px;
+    }
+
+    .profile-buttons {
+        flex: 0 0 auto;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .experiences-grid {
+        grid-template-columns: 1fr;
+        gap: 44px;
+    }
+    
+    .experience-header { justify-content: center;
+    }
+
+    .experience-list {
+        text-align: center;
+    }
+
+    .process-badge {
+        margin-left: 370px;
+        margin-right: auto;
+    }
+
+    .process-intro,
+    .process-email-box  {
+        margin-left: 280px;
+    }
+
+    .stats-row,
+    .process-divider  {
+        margin-left: 280px;
+    } */
+
+    .process-column-left {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .process-column-right {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .process-steps-grid {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .languages-list {
+        justify-content: center;
+    }
+
+    .tools-grid {
+        max-width: 440px;
+        margin: 0 auto;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+
+/*  768 PX */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .main,
+    .content1-section,
+    .content2-section,
+    .about-section,
+    .process-section,
+    .services-section,
+    .achievements-section,
+    .sliders-section {
+        padding: 40px 0 60px 0;
+    }
+
+    .main-title,
+    .achievements-title,
+    .section-title,
+    .slider-center-title,
+    .process-title,
+    .content1-title {
+        font-size: 30;
+    } 
+    
+    .main-image-column,
+    .content1-image-column {
+        width: 280px;
+    }
+
+    .main-image-box,
+    .content1-image-box {
+        height: 320px;
+    }
+
+    .main-actions,
+    .profile-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .content1-card {
+        padding: 24px 20px;
+        text-align: left;
+    }
+
+    .conten2-title {
+        font-size: 28px;
+    }
+    
+    .content2-controls {
+        margin-left: 180px;
+    }
+
+    .content2-image-column {
+        padding: 0 0 50px 0;
+    }
+
+    .content2-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content2-item {
+        border-right: 1px solid #eef0f3;
+        border-bottom: 1px soilid #eef0f3;
+    }
+
+    .content2-item:nth-child(2n) {
+        border-right: none !important;
+    }
+
+    .content2-item:nth-child(n + 5) {
+        border-bottom: none;
+    }
+
+    .experience-item {
+        display: grid;
+        justify-items: left;
+        justify-content: flex-start;
+    }
+
+    .process-column-left {
+        margin-left: -100px;
+        margin-right: auto;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .achievements-cards {
+        padding: 20px;
+        text-align: left;
+    }
+
+    .languages-list {
+        gap: 16px;
+    }
+
+    .slider-case {
+        grid-template-columns: 1fr;
+        max-width: 440px;
+        margin: 0 auto 36px -115px;
+        gap: 28px;
+    }
+
+    .case-card {
+        height: 320px;
+        padding: 0;
+    }
+
+    .case-card-active {
+        height: 360px;
+    }
+
+    .carousel-button {
+        display: none;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .button {
+        width: 100%;
+    }    
+
+    .footer-container {
+        padding: 60px 0 50px 0;
+    }
+
+    .footer-title {
+        font-size: 30px;
+    }
+
+    .footer-contact-grid {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+}
+
