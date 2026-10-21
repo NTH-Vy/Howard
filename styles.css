@@ -744,7 +744,6 @@ body {
 /* Achievments Section */
 .achievements-section {
   padding: 70px 0 100px 0;
-  border-top: 1px solid #f3f4f6;
 }
 
 .achievements-wrapper {
@@ -1068,4 +1067,255 @@ body {
   color: #ffffff;
   box-shadow: 0 4px 14px rgba(29, 114, 242, 0.3);
   transform: translateY(-2px);
+}
+
+/* About section */
+.about-section {
+  position: relative;
+  padding: 10px 0 110px 0;
+  border-top: 1px solid #f3f4f6;
+  background: radial-gradient(ellipse 60% 70% at 0% 45%, rgba(255, 225, 230, 0.85) 0%, rgba(255, 255, 255, 0) 70%),
+              radial-gradient(ellipse 60% 70% at 100% 45%, rgba(238, 230, 255, 0.85) 0%, rgba(255, 255, 255, 0) 70%),
+              #ffffff;
+}
+
+.container:has(.profile-card) {
+  overflow: visible;
+}
+
+.profile-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 38px 46px;
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.06), 0 2px 6px rgba(0, 0, 0, 0.02);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+  margin-top: -70px; 
+  margin-bottom: 64px;
+  position: relative;
+  z-index: 2;
+  border: 1px solid rgba(0, 0, 0, 0.002);
+}
+
+.profile-avatar {
+  flex: 0 0 100px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #0099ff;
+  box-shadow: 0 8px 20px rgba(0, 153, 255, 0.2);
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.3px;
+  margin-bottom: 10px;
+}
+
+.profile-description {
+  font-size: 14.5px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.profile-buttons {
+  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.button-primary {
+  background-color: #1d72f2;
+  color: #ffffff;
+}
+
+.button-primary:hover {
+  background-color: #155fcf;
+}
+
+.button-secondary {
+  background-color: #f8f9fa;
+  color: #1f2937;
+}
+
+.profile-button-primary {
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.profile-button-secondary {
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #f8f9fa;
+  color: #1f2937;
+}
+
+.profile-button-secondary:hover {
+  background-color: #edf0f3;
+}
+
+.experiences-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.experience-line {
+  width: 28px;
+  height: 2px;
+}
+
+.line-blue { background-color: #1d72f2; }
+.line-orange { background-color: #f97316; }
+.line-green { background-color: #10b981; }
+
+.experience-heading-text {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.text-blue { color: #1d72f2; }
+.text-orange { color: #f97316; }
+.text-green { color: #10b981; }
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.experience-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-tag {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.tag-blue { color: #2563eb; }
+.tag-orange { color: #ea580c; }
+
+.experience-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 6px;
+  line-height: 1.35;
+}
+
+.experience-description {
+  font-size: 13.5px;
+  color: #6b7280;
+  line-height: 1.55;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.tool-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 18px 10px 14px 10px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.tool-icon {
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tool-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.adobe-badge {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 800;
+  font-family: 'Inter', sans-serif;
+}
+
+.badge-ps {
+  background-color: #001e36;
+  color: #31A8FF;
+  border: 1px solid #31A8FF;
+}
+
+.badge-ai {
+  background-color: #330000;
+  color: #FF9A00;
+  border: 1px solid #FF9A00;
+}
+
+.badge-xd {
+  background-color: #470137;
+  color: #FF61F6;
+  border: 1px solid #FF61F6;
 }
