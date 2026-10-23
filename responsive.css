@@ -59,7 +59,7 @@
   .main-actions,
   .process-badge,
   .stats-row,
-  .content1-controls {
+  .content2-controls {
     justify-content: center;
   }
 
@@ -102,6 +102,9 @@
 
   .languages-list {
     justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    gap: 20px;
   }
 
   .process-steps-grid {
@@ -119,6 +122,12 @@
     text-align: center;
     padding: 32px 24px;
     gap: 24px;
+  }
+
+  .profile-info {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
   }
 
   .profile-buttons {
@@ -151,7 +160,7 @@
   .tools-grid {
     max-width: 440px;
     margin: 0 auto;
-  }
+    grid-template-columns: repeat(2, minmax(0, 1fr));  }
 
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -165,7 +174,28 @@
   }
 
   .nav-menu {
-    display: none; 
+    display: flex;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    flex: none;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 0;
+    width: 100%;
+    padding: 8px 4px calc(8px + env(safe-area-inset-bottom));
+    background: rgba(255, 255, 255, 0.96);
+    border-top: 1px solid #e5e7eb;
+    box-shadow: 0 -4px 18px rgba(17, 24, 39, 0.08);
+    backdrop-filter: blur(12px);
+  }
+
+  .nav-menu li {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
   }
 
   .nav-menu.active {
@@ -232,17 +262,28 @@
 
   .slider-case {
     grid-template-columns: 1fr;
+    width: 100%;
+    left: auto;
+    transform: none;
     max-width: 440px;
     margin: 0 auto 36px auto;
     gap: 28px;
   }
 
   .case-card {
+    width: 100%;
+    min-width: 0;
     height: 320px;
   }
 
+  .process-steps-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
   .case-card-active {
-    height: 360px;
+    height: auto;
+    aspect-ratio: 4 / 3;
   }
 
   .carousel-button {
@@ -251,7 +292,8 @@
 
   .services-grid {
     grid-template-columns: 1fr;
-    max-width: 340px;
+    gap: 8px;
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -307,8 +349,7 @@
   }
 
   .tools-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    grid-template-columns: repeat(2, minmax(0, 1fr));  }
 
   .footer-container {
     padding: 60px 0 50px 0;
@@ -404,10 +445,9 @@
 
   .profile-title {
     font-size: 20px;
-    white-space: nowrap;
   }
 
-  .profile-desc {
+  .profile-description {
     font-size: 13px;
   }
 
@@ -452,11 +492,13 @@
   }
 
   .case-card {
-    height: 280px;
+    height: auto;
+    aspect-ratio: 4 / 3;
   }
 
   .case-card-active {
-    height: 320px;
+    height: auto;
+    aspect-ratio: 4 / 3;
   }
 
   .case-title {
@@ -484,7 +526,7 @@
   }
 
   .tools-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
   }
 
@@ -566,15 +608,19 @@
     font-size: 22px;
   }
 
-  
-
   .profile-buttons {
     flex-direction: column;
+  }
+
+  .service-card {
+    width: 100%;
+    font-size: 50px;
   }
 
   .stats-row {
     flex-direction: column;
     gap: 24px;
+    align-items: center;
   }
 
   .languages-list {
