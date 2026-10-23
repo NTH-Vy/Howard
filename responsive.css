@@ -286,16 +286,24 @@
     margin-right: auto;
   }
 
+  .service-title {
+    font-size: 25px;
+  }
+
+  .service-description1 {
+    font-size: 17px;
+  }
+
   .achievement-card {
     padding: 20px;
     text-align: left;
   }
 
-    .experience-item {
-        display: grid;
-        justify-items: left;
-        justify-content: flex-start;
-        text-align: justify;
+  .experience-item {
+      display: grid;
+      justify-items: left;
+      justify-content: flex-start;
+      text-align: justify;
     }
 
   .languages-list {
